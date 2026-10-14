@@ -1,0 +1,29 @@
+{
+  "name": "odin-tdd-practice",
+  "version": "1.0.0",
+  "description": "Practice of working within the framework of Test Driven Development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertdebauch/odin-tdd-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/robertdebauch/odin-tdd-practice/issues"
+  },
+  "homepage": "https://github.com/robertdebauch/odin-tdd-practice#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.29.7",
+    "eslint": "^10.12.0",
+    "eslint-plugin-jest": "^29.17.0",
+    "globals": "^17.13.0",
+    "jest": "^30.5.2"
+  }
+}
