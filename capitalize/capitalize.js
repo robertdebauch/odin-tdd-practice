@@ -5,7 +5,7 @@ function capitalize(string) {
 
   const trimmedString = string.trimStart();
 
-  capitalizedString =
+  const capitalizedString =
     trimmedString.charAt(0).toUpperCase() + trimmedString.slice(1);
   return capitalizedString;
 }

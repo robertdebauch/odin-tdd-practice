@@ -32,7 +32,7 @@ describe("Handling cases where the input is not a string", () => {
   });
 });
 
-test("The first letter of a random string becomes capitalized", () => {
+test("The first letter of a each string in array becomes capitalized", () => {
   const words = [
     "слово",
     "cat",
@@ -42,10 +42,11 @@ test("The first letter of a random string becomes capitalized", () => {
     "туман",
     "ночь",
   ];
-  const randomWord = words[Math.floor(Math.random() * words.length)];
-  const expectedWord = randomWord.charAt(0).toUpperCase() + randomWord.slice(1);
 
-  expect(capitalize(randomWord)).toBe(expectedWord);
+  words.forEach((word) => {
+    const expectedWord = word.charAt(0).toUpperCase() + word.slice(1);
+    expect(capitalize(word)).toBe(expectedWord);
+  });
 });
 
 test("The first letter of the returned string should be uppercase", () => {
